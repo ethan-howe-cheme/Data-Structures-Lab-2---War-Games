@@ -7,6 +7,7 @@ Chemical Stack is a 2-player game lasting 8 rounds (with a possible tiebreaker r
 3. Players can _stack_ their elements in one of two ways each round:
   - Matching starting letters of elements (ex. **Stack Element:** Carbon and _Player 1 Element:_ Calcium).
   - Elements within + or - 10 atomic mass units of each other (ex. **Stack Element:** Carbon and _Player 1 Element:_ Oxygen).
+  - NOTE: a player can only stack an element once per round so if it fits both criteria, it is still only one "point" on the stack
 4. Whichever player can _stack_ more of the elements from their deck to the round's **stack** element, wins the round.
   - Players are allowed to _stack_ both ways each round (ex. Player 1 would get a point for both Calcium and Oxygen).
   - If the two players tie for the round, neither gets a point.
@@ -15,11 +16,12 @@ Chemical Stack is a 2-player game lasting 8 rounds (with a possible tiebreaker r
 
 ### Tiebreaker Round
 1. In the tiebreaker, players will try create chemicals with their elements, with more complex chemicals having a higher rank.
-  - The list of chemicals in descending order (Titanium Carbide (TiC), FeS2, NaHCO3, NaCl, H2O)
+  - The list of chemicals in descending order: Titanium Carbide (TiC), Pyrite (FeS<sub>2</sub>), Baking Soda (NaHCO<sub>3</sub>), Sodium Chloride aka Table Salt (NaCl), and Water (H<sub>2</sub>O).
+  - Players just need to hold the elements that make up the chemical (ex. Player with Hydrogen and Oxygen can make water even though water has two hydrogens)
   - This list will be printed out before the tiebreaker in order and then which chemicals each player can make and who won will be printed below
 2. If no chemicals can be created by either player, the player with the noble gas with the highest atomic mass
   - Oganesson is the highest mass noble gas but if it is in the stack, then the player with Radon would win and so on.
-  - This ensures there will be no ties, one player always wins
+  - There are only 7 Noble Gases so if all of them are in the 8 Stack, the next two highest tiebreakers are Gold (Au) and Silver (Ag)
  
 
 ## Code Execution
