@@ -5,8 +5,8 @@ Chemical Stack is a 2-player game lasting 8 rounds (with a possible tiebreaker r
 1. Each player gets a deck of 55 random elements and a **stack** is created of the remaining 8 elements.
 2. Each element in the **stack** represents a round where each player has the opportunity to _"stack"_ as many of their elements as possible.
 3. Players can _stack_ their elements in one of two ways each round:
-  - Matching starting letters of elements (ex. **Stack Element:** Carbon and _Player 1 Element:_ Caclium).
-  - Elements within + or - 10 atomic mass units of each either (ex. **Stack Element:** Carbon and _Player 1 Element:_ Oxygen).
+  - Matching starting letters of elements (ex. **Stack Element:** Carbon and _Player 1 Element:_ Calcium).
+  - Elements within + or - 10 atomic mass units of each other (ex. **Stack Element:** Carbon and _Player 1 Element:_ Oxygen).
 4. Whichever player can _stack_ more of the elements from their deck to the round's **stack** element, wins the round.
   - Players are allowed to _stack_ both ways each round (ex. Player 1 would get a point for both Calcium and Oxygen).
   - If the two players tie for the round, neither gets a point.
@@ -14,7 +14,13 @@ Chemical Stack is a 2-player game lasting 8 rounds (with a possible tiebreaker r
   - However, it is possible there is a tie after 8 rounds and that's where the real fun begins!
 
 ### Tiebreaker Round
-1. Define tiebreaker here!!!
+1. In the tiebreaker, players will try create chemicals with their elements, with more complex chemicals having a higher rank.
+  - The list of chemicals in descending order (Titanium Carbide (TiC), FeS2, NaHCO3, NaCl, H2O)
+  - This list will be printed out before the tiebreaker in order and then which chemicals each player can make and who won will be printed below
+2. If no chemicals can be created by either player, the player with the noble gas with the highest atomic mass
+  - Oganesson is the highest mass noble gas but if it is in the stack, then the player with Radon would win and so on.
+  - This ensures there will be no ties, one player always wins
+ 
 
 ## Code Execution
 Chemical Stack is defined in the Game class and can be run as many times as desired in the main method.
@@ -25,6 +31,7 @@ Chemical Stack is defined in the Game class and can be run as many times as desi
   - Each round, the number and winner of the round is printed
 4. At the end of the game, the winner will be printed
 5. Additional stats from the game can be printed using the stats method
+- The stats method prints each players total wins, rounds won in the previous game, the best chemical they could make (if any), and biggest stack in the previous game (include what the stack element was).
 
 <img width="857" height="97" alt="image" src="https://github.com/user-attachments/assets/22c5d786-0e6a-4cc2-999c-4ca19fe60d74" />
 
